@@ -12,14 +12,15 @@ class ViewController: UIViewController {
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
-		// Do any additional setup after loading the view, typically from a nib.
+
+       ExampleClient.getNewsFeedWithFirstId(page: "0", limit: "20")  {(news) in
+
+
+
 	}
 
-	override func didReceiveMemoryWarning() {
-		super.didReceiveMemoryWarning()
-		// Dispose of any resources that can be recreated.
-	}
 
+	} 
 
 }
 
